@@ -1,0 +1,44 @@
+.p1Out {
+   color: red;
+  border: 2px;
+  width: 100px;
+  height: 100px;
+  font-size:400%;
+  position: relative;
+  left: 170px;
+}
+.p2Out {
+  color: red;
+  border: 2px;
+  width: 100px;
+  height: 100px;
+  font-size:400%;
+  position: relative;
+  left: 170px;
+}
+.output {
+  border: 2px solid red;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+.output2 {
+  border: 2px solid red;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+.output3 {
+  border: 2px solid red;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+.playerOne{
+  border: 2px solid red;
+  text-align: center;
+}
+.playerTwo{
+  border: 2px solid red;
+  text-align: center;
+}
