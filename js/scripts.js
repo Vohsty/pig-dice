@@ -11,6 +11,15 @@ $().ready(()=>{
   var subTotal2=0;
     grayer('form2',true);
 
+    function PlayersInfo(Name, score, totalScore) {
+        this.playerNames = Name;
+        this.playerScore = score;
+        this.totalScores = totalScore;
+    }
+
+    PlayersInfo.prototype.Total = function (total) {
+        return this.totalScores = this.totalScores + total;
+    }
 
     $("#rollOne").click(()=>{
       event.preventDefault();
@@ -64,8 +73,7 @@ $().ready(()=>{
        $(".p1Out").text(subTotal);
        grayer('form1',true);
        grayer('form2',false);
-       if (total>20){
-         alert(name +" worn");
+       if (total>99){
          total =100;
          $(".output2").text("Your score Is " +total);
          grayer('form2',true);
@@ -75,7 +83,6 @@ $().ready(()=>{
     });
 
     $("#hold2").click(()=>{
-
        total2 = total2+ subTotal2;
        $(".output3").text("Your score Is " +total2);
        subTotal2=0;
@@ -84,8 +91,7 @@ $().ready(()=>{
        grayer('form1',false);
        grayer('form2',true);
 
-       if (total2>20) {
-         alert(name2+" worn");
+       if (total2>99) {
          total2=100;
          $(".output3").text("Your score Is " +total2);
          grayer('form1',true);
@@ -106,15 +112,11 @@ $().ready(()=>{
      for(var i=0; i<f.length; i++) f[i].disabled = yesNo;
     }
 
-  function PlayersInfo(name, score, totalScore) {
-      this.playerNames = name;
-      this.playerScore = score;
-      this.totalScores = totalScore;
-  }
+
   //USER LOGIC
   $("#play1").click(function(){
   var player = $("#victim1").val();
-  name = player;
+  name = player.toUpperCase();
   $(".playerNameOne").text(name);
   $(".vic1").fadeOut();
   $(".vic2").fadeIn();
@@ -123,11 +125,11 @@ $().ready(()=>{
   });
   $("#play2").click(function(){
   var player2 = $("#victim2").val();
-  name2 = player2;
+  name2 = player2.toUpperCase();
   $(".playerNameTwo").text(name2);
   $(".vic2").fadeOut();
   $(".container").fadeIn();
   });
-  
+
 
 });

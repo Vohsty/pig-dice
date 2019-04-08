@@ -30,17 +30,19 @@
 .output2 {
   border: 2px solid red;
   width: 100px;
-  height: 50px;
+  height: 100px;
   text-align: center;
   color: red;
+  font-size: 150%;
 
 }
 .output3 {
   border: 2px solid red;
   width: 100px;
-  height: 50px;
+  height: 100px;
   text-align: center;
   color: red;
+  font-size: 150%;
 }
 .playerOne{
   border: 2px solid red;
@@ -228,7 +230,7 @@ body {
   height: 300px;
   background-image: url("img/win.gif");
   position: relative;
-  top: -300px;
+  top: -360px;
   left: 400px;
   display: none;
 }
