@@ -64,7 +64,7 @@
   font-family: titleFont2;
   color: white;
   background-color: #5DADEC;
-  background:rgba(0,0,0,0.8);
+  background:rgba(0,0,0,0.6);
   position: relative;
   top: 0;
   left: 0;
@@ -125,7 +125,7 @@ a:hover{
 }
 .wall2-cover {
   background-color: #5DADEC;
-  background:rgba(0,0,0,0.8);
+  background:rgba(0,0,0,0.6);
   position: relative;
   top: 0;
   left: 0;
@@ -250,4 +250,44 @@ body {
   left: 200px;
   background-color: red;
   border: 2px solid red;
+}
+#rollOne{
+  background-image: url("img/butt1.png");
+  background: red;
+  color: white;
+  border: 2px solid red;
+}
+#rollOne:hover{
+  background: red;
+  color: black;
+}
+#rollTwo{
+  background-image: url("img/butt1.png");
+  background: red;
+  color: white;
+  border: 2px solid red;
+}
+#rollTwo:hover{
+  background: red;
+  color: black;
+}
+#hold{
+  background-image: url("img/butt1.png");
+  background: red;
+  color: white;
+  border: 2px solid red;
+}
+#hold:hover{
+  background: red;
+  color: black;
+}
+#hold2{
+  background-image: url("img/butt1.png");
+  background: red;
+  color: white;
+  border: 2px solid red;
+}
+#hold2:hover{
+  background: red;
+  color: black;
 }
